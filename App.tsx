@@ -1,14 +1,14 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { SafeAreaView, StyleSheet } from "react-native";
 import MainScreen from "./screens/MainScreen";
 
 const App: React.FC = () => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <MainScreen />
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 };
 
